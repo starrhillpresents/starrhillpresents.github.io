@@ -15,11 +15,7 @@
     </head>
     <body>
 				
-		<div class="nav-container">
-		    
-		    
-		
-		    <nav>
+		<div class="nav-container"><nav>
 		
 		        <div class="nav-bar text-center">
 		            <div class="col-md-2 col-md-push-5 col-sm-12 text-center">
@@ -31,10 +27,8 @@
 		            <div class="col-sm-12 col-md-5 col-md-pull-2 overflow-hidden-xs">
 		                <ul class="menu inline-block pull-right">
 		                    <li><a href="#about" class="inner-link" target="_self">ABOUT</a></li>
-		                    <li class="toggle-sub"><a href="#">EVENTS</a>
-		                        <ul>
-		                            <li><a href="#">Single</a></li>
-		                        </ul>
+		                    <li class="toggle-sub"><a href="#fests" class="inner-link" target="_self">EVENTS</a>
+		                        
 		                    </li>
 		                </ul>
 		            </div>
@@ -43,9 +37,7 @@
 		                <ul class="menu">
 		                    <li><a href="#">VENUES </a></li>
 		                    <li><a href="#">CONTACT</a>
-		                        <ul>
-		                            <li><a href="#">Single</a></li>
-		                        </ul>
+		                        
 		                    </li>
 		                </ul>
 		            </div>
@@ -55,6 +47,10 @@
 		            <i class="ti-menu"></i>
 		        </div>
 		    </nav>
+		    
+		    
+		
+		    
 		
 		</div>
 		
@@ -78,6 +74,8 @@
 				
 			</section>
 			
+			<a id="fests" class="in-page-link"></a>
+			
 			<section class="projects">
 		        <div class="container">
 		            <div class="masonry-loader">
@@ -86,7 +84,7 @@
 		                </div>
 		            </div>
 		            <div class="row masonry masonryFlyIn">
-		                <div class="col-sm-6 masonry-item project" data-filter="People">
+		                <div class="col-sm-6 masonry-item project" data-filter="Events">
 		                    <div class="image-tile hover-tile text-center">
 		                        <img alt="Bonnaroo" class="background-image" src="img/broo.jpg">
 		                        <div class="hover-state">
@@ -161,11 +159,43 @@
 		        </div>
 		        
 		    </section>			
-			<footer class="footer-2 bg-dark text-center-xs">
+			
+		<section>
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-sm-6 col-md-5">
+		                    <h4 class="uppercase">Get In Touch</h4>
+		                    <p>
+		                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+		                    </p>
+		                    <hr>
+		                    <p>P.O Box 1467<br>Charlottesville, VA
+		                    </p>
+		                    <hr>
+		                    <p>
+		                        <strong>E:</strong> hello@foundry.net
+		                        <br>
+		                        <strong>P:</strong> +614 3948 2726
+		                        <br>
+		                    </p>
+		                </div>
+		                <div class="col-sm-6 col-md-5 col-md-offset-1">
+		                    <form class="form-email" data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill all fields correctly.">
+		                        <input type="text" class="validate-required" name="name" placeholder="Your Name">
+		                        <input type="text" class="validate-required validate-email" name="email" placeholder="Email Address">
+		                        <textarea class="validate-required" name="message" rows="4" placeholder="Message"></textarea>
+		                        <button type="submit">Send Message</button>
+		                    </form>
+		                </div>
+		            </div>
+		            
+		        </div>
+		        
+		    </section><footer class="footer-2 bg-dark text-center-xs">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-4">
-							<a href="#"><img class="image-xxs fade-half" alt="Logo Light" src="img/SHP Light.png"></a>
+							<a href="#"><div class="vnu"><img class="image-xxs fade-half" alt="Logo Light" src="img/SHP Light.png"></div></a>
 						</div>
 					
 						<div class="col-sm-4 text-center">
@@ -183,8 +213,7 @@
 						</div>
 					</div>
 				</div>
-			</footer>
-		</div>
+			</footer></div>
 		
 				
 	<script src="js/jquery.min.js"></script>
