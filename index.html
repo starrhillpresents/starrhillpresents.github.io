@@ -6,13 +6,15 @@
         <title>Starr Hill Presents</title>
         <meta name="description" content="Starr Hill Presents"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-        <link href="/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,700,700italic" rel="stylesheet" type="text/css">
+        <link href="css/font-robotocondensed.css" rel="stylesheet" type="text/css">
     </head>
+
     <body>
 				
 		<div class="nav-container"><nav>
@@ -27,7 +29,7 @@
 		            <div class="col-sm-12 col-md-5 col-md-pull-2 overflow-hidden-xs">
 		                <ul class="menu inline-block pull-right">
 		                    <li><a href="#about" class="inner-link" target="_self">ABOUT</a></li>
-		                    <li class="toggle-sub"><a href="#fests" class="inner-link" target="_self">EVENTS</a>
+		                    <li><a href="#fests" class="inner-link" target="_self">EVENTS</a>
 		                        
 		                    </li>
 		                </ul>
@@ -74,8 +76,6 @@
 				
 			</section>
 			
-			<a id="fests" class="in-page-link"></a>
-			
 			<section class="projects">
 		        <div class="container">
 		            <div class="masonry-loader">
@@ -84,7 +84,7 @@
 		                </div>
 		            </div>
 		            <div class="row masonry masonryFlyIn">
-		                <div class="col-sm-6 masonry-item project" data-filter="Events">
+		                <div class="col-sm-6 masonry-item project" data-filter="People">
 		                    <div class="image-tile hover-tile text-center">
 		                        <img alt="Bonnaroo" class="background-image" src="img/broo.jpg">
 		                        <div class="hover-state">
@@ -153,6 +153,28 @@
 		                        </div>
 		                    </div>
 		                    
+		                </div><div class="col-sm-6 masonry-item project" data-filter="Festivals">
+		                    <div class="image-tile hover-tile text-center">
+		                        <img alt="FPSF" class="background-image" src="img/fpsf.jpg">
+		                        <div class="hover-state">
+		                            <a href="https://www.fpsf.com/" target="_blank">
+		                                <h3 class="uppercase mb8">Free press<br>summer fest<br></h3>
+		                                <h6 class="uppercase">HOUSTON / TX</h6>
+		                            </a>
+		                        </div>
+		                    </div>
+		                    
+		                </div><div class="col-sm-6 masonry-item project" data-filter="Festivals">
+		                    <div class="image-tile hover-tile text-center">
+		                        <img alt="Forecastle" class="background-image" src="img/forecastle.jpg">
+		                        <div class="hover-state">
+		                            <a href="http://forecastlefest.com/" target="_blank">
+		                                <h3 class="uppercase mb8">Forecastle</h3>
+		                                <h6 class="uppercase">Louisville / KY</h6>
+		                            </a>
+		                        </div>
+		                    </div>
+		                    
 		                </div>
 		            </div>
 		            
@@ -163,20 +185,58 @@
 		<section>
 		        <div class="container">
 		            <div class="row">
+		                <div class="col-md-4 col-sm-6">
+		                    <div class="image-tile outer-title text-center">
+		                        <img alt="Jefferson" src="img/jeff.jpg">
+		                        <div class="title mb16">
+		                            <h5 class="uppercase mb0">Jefferson Theater</h5>
+		                            <span>Charlottesville, VA</span>
+		                        </div>
+		                        <p class="mb0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+		                    </div>
+		                </div>
+		                <div class="col-md-4 col-sm-6">
+		                    <div class="image-tile outer-title text-center">
+		                        <img alt="Sprint Pavilion" src="img/pav.jpg">
+		                        <div class="title mb16">
+		                            <h5 class="uppercase mb0">SPRINT PAVILION</h5>
+		                            <span>Charlottesville, VA</span>
+		                        </div>
+		                        <p class="mb0">
+		                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+		                        </p>
+		                    </div>
+		                </div>
+		                <div class="col-md-4 col-sm-6">
+		                    <div class="image-tile outer-title text-center">
+		                        <img alt="Pic" src="img/southern.jpg">
+		                        <div class="title mb16">
+		                            <h5 class="uppercase mb0">The southern</h5>
+		                            <span>Charlottesville, VA</span>
+		                        </div>
+		                        <p class="mb0">
+		                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+		                        </p>
+		                    </div>
+		                </div>
+		            </div>
+		            
+		        </div>
+		        
+		    </section><section>
+		        <div class="container">
+		            <div class="row">
 		                <div class="col-sm-6 col-md-5">
 		                    <h4 class="uppercase">Get In Touch</h4>
-		                    <p>
-		                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-		                    </p>
+		                    
 		                    <hr>
-		                    <p>Starr Hill Presents<br>P.O Box 1467<br>Charlottesville, VA</p>
+		                    <p>P.O. Box 1467<br>Charlottesville, VA</p>
 		                    <hr>
-		                    <p>
-		                        <strong>E:</strong> hello@starrhillpresents.com &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
+		                    <p><br>
 		                    </p>
 		                </div>
 		                <div class="col-sm-6 col-md-5 col-md-offset-1">
-		                    <form class="form-email" data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill all fields correctly.">
+		                    <form class="form-email" data-success="Thank you for your submission." data-error="Please fill all fields correctly.">
 		                        <input type="text" class="validate-required" name="name" placeholder="Your Name">
 		                        <input type="text" class="validate-required validate-email" name="email" placeholder="Email Address">
 		                        <textarea class="validate-required" name="message" rows="4" placeholder="Message"></textarea>
@@ -199,14 +259,7 @@
 								© Copyright 2017 - Starr Hill Presents</span>
 						</div>
 					
-						<div class="col-sm-4 text-right text-center-xs">
-							<ul class="list-inline social-list">
-								<li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-								<li><a href="#"><i class="ti-facebook"></i></a></li>
-								<li><a href="#"><i class="ti-dribbble"></i></a></li>
-								<li><a href="#"><i class="ti-vimeo-alt"></i></a></li>
-							</ul>
-						</div>
+						
 					</div>
 				</div>
 			</footer></div>
