@@ -158,6 +158,9 @@ hr.short-thick {
     align-items: center;
       text-align: center !important;
        position: center;
+         -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
 }
 .vnu {
   display: inline;
