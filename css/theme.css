@@ -157,6 +157,7 @@ hr.short-thick {
 .container-contact {
     align-items: center;
       text-align: center !important;
+       position: center;
 }
 .vnu {
   display: inline;
