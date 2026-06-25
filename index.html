@@ -242,9 +242,47 @@
 		    </section><section>
 		        <div class="container-contact">
 			        <a id="contact" class="in-page-link"></a>
-			        <center>	    
-					<h3> <a href="https://forms.gle/Nq3WBCZeVRQzYDdd6">Contact Us</a></li></h3>
-									 </center>
+			        <center>
+					<h3>Contact Us</h3>
+					</center>
+					<form id="contact-form" class="contact-form" novalidate>
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<label for="cf-name">Name *</label>
+								<input type="text" id="cf-name" name="name" class="form-control" required>
+							</div>
+							<div class="col-sm-6 form-group">
+								<label for="cf-email">Email *</label>
+								<input type="email" id="cf-email" name="email" class="form-control" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<label for="cf-phone">Phone</label>
+								<input type="tel" id="cf-phone" name="phone" class="form-control">
+							</div>
+							<div class="col-sm-6 form-group">
+								<label for="cf-type">Inquiry type *</label>
+								<select id="cf-type" name="inquiryType" class="form-control" required>
+									<option value="">Choose…</option>
+									<option>Booking</option>
+									<option>Press/Media</option>
+									<option>Private Event/Venue</option>
+									<option>General</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="cf-message">Message *</label>
+							<textarea id="cf-message" name="message" rows="5" class="form-control" required></textarea>
+						</div>
+						<!-- honeypot: hidden from humans, bots fill it -->
+						<div aria-hidden="true" style="position:absolute;left:-5000px;top:-5000px;">
+							<input type="text" name="company" tabindex="-1" autocomplete="off">
+						</div>
+						<button type="submit" class="btn btn-primary" id="cf-submit">Send</button>
+						<p id="cf-status" class="cf-status" role="status" aria-live="polite"></p>
+					</form>
 				              
 		
 		        
@@ -277,6 +315,7 @@
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/contact-form.js"></script>
     </body>
 </html>
 				
