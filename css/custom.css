@@ -13,6 +13,154 @@
 
 
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
-.cf-status { margin-top: 12px; font-weight: 600; }
-.cf-status--success { color: #2e7d32; }
-.cf-status--error { color: #c62828; }
+
+/* ---------- Contact form ---------- */
+.container-contact {
+  padding: 64px 20px 84px;
+}
+.contact-card {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+}
+.contact-title {
+  text-align: center;
+  text-wrap: balance;
+  margin: 0 0 10px;
+}
+.contact-subtitle {
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto 38px;
+  color: #6b6b70;
+  font-size: 15px;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+.cf-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 20px;
+}
+.cf-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.cf-field--full {
+  grid-column: 1 / -1;
+}
+.cf-field label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: #2a2a2e;
+  margin-bottom: 7px;
+}
+.cf-req {
+  color: #c0392b;
+}
+
+/* Scoped under .contact-form to override theme's input[type=...] / button[type=submit] rules */
+.contact-form .cf-input {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+  text-transform: none;
+  color: #1c1c1f;
+  background: #fff;
+  border: 1px solid #d7d7dc;
+  border-radius: 10px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.contact-form .cf-input::placeholder {
+  color: #a8a8ad;
+}
+.contact-form .cf-input:hover {
+  border-color: #bdbdc4;
+}
+.contact-form .cf-input:focus {
+  border-color: #1b1b1d;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(27, 27, 29, .12);
+}
+.contact-form .cf-textarea {
+  height: auto;
+  min-height: 130px;
+  resize: vertical;
+  line-height: 1.5;
+}
+.contact-form .cf-select {
+  cursor: pointer;
+  padding-right: 38px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='none' stroke='%236b6b70' stroke-width='1.6' d='M1 1.5 6 6.5 11 1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+.cf-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 26px;
+}
+.contact-form .cf-submit {
+  width: auto;
+  height: auto;
+  line-height: normal;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: .02em;
+  color: #fff;
+  background: #1b1b1d;
+  padding: 14px 30px;
+  min-height: 48px;
+  border-radius: 10px !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .18), 0 4px 14px rgba(0, 0, 0, .10);
+  transition: background-color .15s ease, transform .06s ease, box-shadow .15s ease;
+}
+.contact-form .cf-submit:hover {
+  background: #000;
+}
+.contact-form .cf-submit:active {
+  transform: scale(.96);
+}
+.contact-form .cf-submit:disabled {
+  opacity: .55;
+  cursor: default;
+  transform: none;
+}
+
+.cf-status {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.cf-status--success { color: #1e7e34; }
+.cf-status--error { color: #c0392b; }
+
+@media (max-width: 600px) {
+  .cf-grid { grid-template-columns: 1fr; }
+  .cf-submit { width: 100%; }
+  .container-contact { padding: 48px 18px 64px; }
+  .cf-actions { margin-top: 22px; }
+}
