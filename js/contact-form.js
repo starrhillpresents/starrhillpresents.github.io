@@ -8,6 +8,7 @@
   if (!form) return;
   var statusEl = document.getElementById("cf-status");
   var submitBtn = document.getElementById("cf-submit");
+  if (!statusEl || !submitBtn) return;
 
   function val(name) {
     var el = form.elements[name];
