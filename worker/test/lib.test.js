@@ -48,3 +48,14 @@ test("buildSlackText: shows em dash when phone is blank", () => {
   });
   assert.match(t, /\*Phone:\*  —/);
 });
+
+test("buildSlackText: escapes Slack control characters to neutralize @channel pings", () => {
+  const t = buildSlackText({
+    name: "A & B", email: "x@y.com", phone: "",
+    inquiryType: "General", message: "ping <!channel> & <!here>"
+  });
+  assert.doesNotMatch(t, /<!channel>/);
+  assert.doesNotMatch(t, /<!here>/);
+  assert.match(t, /&lt;!channel&gt;/);
+  assert.match(t, /A &amp; B/);
+});

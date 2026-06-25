@@ -15,13 +15,14 @@ export function validateSubmission(data) {
 }
 
 export function buildSlackText(data) {
+  const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   const phone = data.phone && String(data.phone).trim() ? String(data.phone).trim() : "—";
   return [
-    `📩 *New contact — ${String(data.inquiryType).trim()}*`,
-    `*Name:*  ${String(data.name).trim()}`,
-    `*Email:*  ${String(data.email).trim()}`,
-    `*Phone:*  ${phone}`,
+    `📩 *New contact — ${esc(String(data.inquiryType).trim())}*`,
+    `*Name:*  ${esc(String(data.name).trim())}`,
+    `*Email:*  ${esc(String(data.email).trim())}`,
+    `*Phone:*  ${esc(phone)}`,
     "─────────────────────────",
-    String(data.message).trim()
+    esc(String(data.message).trim())
   ].join("\n");
 }
