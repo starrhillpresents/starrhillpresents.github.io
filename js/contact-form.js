@@ -1,6 +1,5 @@
 (function () {
-  // TODO(Task 7): replace with the deployed Cloudflare Worker URL.
-  var WORKER_URL = "https://REPLACE-ME.workers.dev";
+  var WORKER_URL = "https://shp-contact.generalapps.workers.dev";
   // Shown to visitors if sending fails. Confirm this is a monitored inbox.
   var FALLBACK_EMAIL = "info@starrhillpresents.com";
 
